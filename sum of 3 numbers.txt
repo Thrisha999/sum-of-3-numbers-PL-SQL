@@ -1,0 +1,31 @@
+--sum of 3 numbers
+
+--PL/SQL BLOCK
+
+declare
+	a int;
+	b int;
+	c int;
+	s int;
+begin
+	a:=&a;
+	b:=&b;
+	c:=&c;
+	s:=a+b+c;
+	dbms_output.put_line('the sum of'||a||','||b||'and'||c||'is'||s);
+end;
+/
+
+--output:
+Enter value for a: 1
+old   7:        a:=&a;
+new   7:        a:=1;
+Enter value for b: 1
+old   8:        b:=&b;
+new   8:        b:=1;
+Enter value for c: 1
+old   9:        c:=&c;
+new   9:        c:=1;
+the sum of1,1and1is3
+
+PL/SQL procedure successfully completed.
